@@ -1,118 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Apotek Shabah</title>
-    <!-- favicon -->
-    <link rel="icon" type="image/png" href="../image/android-chrome-192x192.png" />
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-    <!-- Cssku -->
-    <link rel="stylesheet" href="../website/css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apotek Shabah - Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <script src="https://unpkg.com/lucide@latest"></script>
   </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <div class="container">
-        <a class="navbar-brand" href="../html/home.html"> <img src="../image/android-chrome-192x192.png" alt="Shabah" width="50" /> Apotek Shabah </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../html/index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../website/tutor/index.html" target="_blank">How To Buy</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
+  <body id="beranda">
+    <div class="main-wrapper">
+      <header>
+        <nav class="navbar">
+          <div class="logo"><i data-lucide="pill"></i> Apotek <span>Shabah</span></div>
+
+          <div class="menu-toggle" id="mobile-menu">
+            <i data-lucide="menu"></i>
+          </div>
+
+          <ul class="nav-links" id="nav-list">
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#tentang-kami">Tentang Kami</a></li>
+            <li><a href="#layanan">Layanan</a></li>
+            <li><a href="#produk">Produk</a></li>
+            <li><a href="https://wa.me/85745320912" class="nav-wa-mobile">Hubungi Kami</a></li>
           </ul>
-          <p><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M13.5 21c-.276 0-.5-.224-.5-.5s.224-.5.5-.5.5.224.5.5-.224.5-.5.5m0-2c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5m-6 2c-.276 0-.5-.224-.5-.5s.224-.5.5-.5.5.224.5.5-.224.5-.5.5m0-2c-.828 0-1.5.672-1.5 1.5s.672 1.5 1.5 1.5 1.5-.672 1.5-1.5-.672-1.5-1.5-1.5m16.5-16h-2.964l-3.642 15h-13.321l-4.073-13.003h19.522l.728-2.997h3.75v1zm-22.581 2.997l3.393 11.003h11.794l2.674-11.003h-17.861z"/></svg></p>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-            <button class="btn btn-outline-success text-bg-secondary search" type="submit">Search</button>
-          </form>
+
+          <a href="https://wa.me/85745320912" target="_blank" rel="noopener" class="chat desktop-only">Hubungi Kami</a>
+        </nav>
+      </header>
+
+      <section class="hero-section">
+        <div class="hero-container">
+          <div class="hero-card text-card">
+            <span class="label">Hero content</span>
+            <h1>Kesehatan Anda, <br /><span>Prioritas Utama Kami</span></h1>
+            <p>Dapatkan obat asli, konsultasi gratis dengan apoteker cepat langsung ke depan pintu rumah Anda.</p>
+            <div class="hero-actions">
+              <a href="#" class="btn-green">Cari Obat</a>
+              <a href="#" class="btn-green">Konsultasi</a>
+            </div>
+          </div>
+
+          <div class="hero-card image-card">
+            <span class="label">Hero content</span>
+            <div class="vector-placeholder">
+              <div class="vector-art">
+                <img src="assets/img/medicine.jpg" alt="" />
+              </div>
+            </div>
+            <div class="img-tag"><span>img</span> Modern-pharmacy-illustration</div>
+          </div>
         </div>
-      </div>
-    </nav>
-    <!-- Navbar End -->
-    
-    <!-- Jumbotron -->
-    <div class="jumbotron text-center">
-      <h1 class="display-4">Welcome to Apotek Shabah</h1>
-      <p class="lead">Your trusted online pharmacy for all your healthcare needs.</p>
-      <hr class="my-4" />
-      <!-- Jumbotron End -->
+      </section>
+      <!-- Tentnag kami -->
+      <section id="tentang-kami" class="about-section">
+        <div class="about-container">
+          <div class="about-image">
+            <div class="vector-circle">
+              <i data-lucide="hospital" class="about-icon"></i>
+            </div>
+            <div class="blob-bg"></div>
+          </div>
 
-      <!-- Product -->
-      <div class="container-card">
-      <div class="card">
-  <img src="../website/image/product/bodrexin.jpeg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Bodrexin 80mg Tablet Per Strip Isi 4 Tablet (per Dos)</h5>
-    <p>Rp 5.159,- / Dos</p>
-    <p><a href="#">Detail Product</a></p>
-    <hr>
-    <a href="#" class="btn btn-primary">Buy Now</a>
-    <a href="#" class="btn btn-primary">Add To Cart</a>
-  </div>
-</div>
-<div class="card">
-  <img src="../website/image/product/sanmols-syr.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Sanmol Sirup 120mg/5ml (per Botol)</h5>
-    <p><del>Rp 23.063,-/</del>Botol <br>
-      Rp 20.755,-/ Botol
-    </p>
-    <p><a href="#">Detail Product</a></p>
-    <hr>
-    <a href="#" class="btn btn-primary">Buy Now</a>
-    <a href="#" class="btn btn-primary">Add To Cart</a>
-  </div>
-</div>
-<div class="card">
-  <img src="../website/image/product/metformin.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Metformin Hexpharm 500mg Tablet 1 Dos Isi 20 Strip @10 Tablet (per Tablet)</h5>
-    <p>Rp 5.159,- / Dos</p>
-    <p><a href="#">Detail Product</a></p>
-    <hr>
-    <a href="#" class="btn btn-primary">Buy Now</a>
-    <a href="#" class="btn btn-primary">Add To Cart</a>
-  </div>
-</div>
-<div class="card">
-  <img src="../website/image/product/actifed-merah.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Actifed Cough Sirup Merah 60ml (per Botol)</h5>
-    <p>Rp 5.159,- / Dos</p>
-    <p><a href="#">Detail Product</a></p>
-    <hr>
-    <a href="#" class="btn btn-primary">Buy Now</a>
-    <a href="#" class="btn btn-primary">Add To Cart</a>
-  </div>
-</div></div>
-      <!-- Product End -->
+          <div class="about-content">
+            <span class="label">Tentang Kami</span>
+            <h2>Melayani Kesehatan Anda Sejak 2010</h2>
+            <p><strong>Apotek Shabah</strong> adalah mitra kesehatan terpercaya yang berkomitmen menyediakan obat-obatan berkualitas tinggi dan layanan kefarmasian yang profesional.</p>
+            <p>
+              Kami memahami bahwa akses cepat terhadap obat-obatan sangatlah penting. Oleh karena itu, kami menggabungkan teknologi pemesanan online dengan keramahan layanan apoteker konvensional untuk memastikan Anda mendapatkan perawatan
+              terbaik.
+            </p>
+            <div class="about-stats">
+              <div class="stat-box">
+                <h4>15k+</h4>
+                <p>Pelanggan Puas</p>
+              </div>
+              <div class="stat-box">
+                <h4>100%</h4>
+                <p>Obat Asli</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end tentang kami -->
 
+      <!-- layanan -->
+      <section class="features-section" id="layanan">
+        <div class="feature-container">
+          <div class="feature-item">
+            <i data-lucide="shield-check" class="f-icon"></i>
+            <h3>100% Obat Asli</h3>
+            <p>Produk resmi terdaftar BPOM</p>
+          </div>
+          <div class="feature-item">
+            <i data-lucide="user-cog" class="f-icon"></i>
+            <h3>Apoteker Siaga</h3>
+            <p>Konsultasi dosis dan layanan kirim area lokal.</p>
+          </div>
+          <div class="feature-item">
+            <i data-lucide="truck" class="f-icon"></i>
+            <h3>Antar Cepat</h3>
+            <p>Layanan kirim area lokal</p>
+          </div>
+        </div>
+      </section>
+      <!-- end layanan -->
+
+      <!-- produk -->
+      <section id="produk" class="product-section">
+        <div class="product-container">
+          <span class="label">Produk Unggulan</span>
+          <h2>Kategori Kesehatan Terpopuler</h2>
+
+          <div class="product-grid">
+            <div class="product-card">
+              <div class="product-img">
+                <i data-lucide="package" class="p-icon"></i>
+              </div>
+              <h4>Vitamin & Suplemen</h4>
+              <p>Jaga daya tahan tubuh Anda dengan multivitamin harian.</p>
+              <a href="https://wa.me/85745320912" class="btn-buy">Beli Sekarang</a>
+            </div>
+
+            <div class="product-card">
+              <div class="product-img">
+                <i data-lucide="thermometer" class="p-icon"></i>
+              </div>
+              <h4>Alat Kesehatan</h4>
+              <p>Termometer digital, tensimeter, dan alat medis lainnya.</p>
+              <a href="https://wa.me/85745320912" class="btn-buy">Cek Stok</a>
+            </div>
+
+            <div class="product-card">
+              <div class="product-img">
+                <i data-lucide="bandage" class="p-icon"></i>
+              </div>
+              <h4>Pertolongan Pertama</h4>
+              <p>Plester, antiseptik, dan perlengkapan P3K lengkap.</p>
+              <a href="https://wa.me/85745320912" class="btn-buy">Pesan Cepat</a>
+            </div>
+
+            <div class="product-card">
+              <div class="product-img">
+                <i data-lucide="baby" class="p-icon"></i>
+              </div>
+              <h4>Ibu & Anak</h4>
+              <p>Susu bayi, popok, dan nutrisi khusus untuk ibu hamil.</p>
+              <a href="https://wa.me/85745320912" class="btn-buy">Beli Sekarang</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end produk -->
+
+      <!-- lokasi dan jam operasional -->
+      <section id="kontak" class="location-section">
+        <div class="location-container">
+          <div class="location-info">
+            <span class="label">Kunjungi Kami</span>
+            <h2>Lokasi & Jam Operasional</h2>
+            <p><i data-lucide="map-pin"></i> Jl. Kesehatan No. 123, Kota Anda</p>
+            <p><i data-lucide="clock"></i> Senin - Minggu: 08:00 - 22:00</p>
+            <a href="https://maps.app.goo.gl/HMPN4kyHrCutGyxb9" target="_blank" rel="noopener" class="btn-maps">Lihat di Google Maps</a>
+          </div>
+          <div class="upload-prescription">
+            <div class="upload-card">
+              <i data-lucide="file-text" class="u-icon"></i>
+              <h4>Punya Resep Dokter?</h4>
+              <p>Foto resep Anda dan kirim ke kami, kami siapkan obatnya segera.</p>
+              <a href="https://wa.me/85745320912" class="btn-wa">Kirim Resep Sekarang</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end lokasi dan jam operasional -->
+      <!--  back to top -->
+      <button id="backToTop" title="Kembali ke atas">
+        <i data-lucide="arrow-up"></i>
+      </button>
       <!-- footer -->
-      <div class="contact">
-        <h2>Follow Us</h2>
-        <a href="#"><img src="/image/icon-sosmed/instagram.jfif" alt="Instagram" width="50" /></a>
-        <a href="#"><img src="/image/icon-sosmed/facebook.png" alt="Facebook" width="50" /></a>
-        <a href="https://wa.me/62082234938250" target="_blank" rel="noopener"><img src="/image/icon-sosmed/whatsapp.png" alt="WhatsApp" width="50" /></a>
-        
-      </div>
-      <footer class="bg-primary text-white text-center text-lg-start">
-        <div class="text-center p-3">
-          © 2024 Copyright:
-          <a class="text-white" href="#">ApotekShabah.com</a>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+      <footer id="footer">
+        <p>&copy; 2024 Apotek Shabah. Melayani dengan Sepenuh Hati.</p>
+      </footer>
+    </div>
+
+    <!-- icons -->
+    <script>
+      lucide.createIcons();
+    </script>
+    <!-- main js -->
+    <script src="main.js"></script>
   </body>
 </html>
