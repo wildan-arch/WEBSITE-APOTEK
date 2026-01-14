@@ -563,5 +563,18 @@ nav {
   .location-container {
     text-align: center;
   }
+  @media (max-width: 360px) {
+    .hero-container {
+      width: 100%;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+    .hero-card h1 {
+      font-size: 20px;
+    }
+    .about-content h2 {
+      font-size: 1.8rem;
+    }
+  }
 }
 /* Akhir Style CSS */
