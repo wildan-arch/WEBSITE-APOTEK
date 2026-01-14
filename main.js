@@ -34,25 +34,16 @@ window.onload = function () {
 const menuToggle = document.getElementById("mobile-menu");
 const navList = document.getElementById("nav-list");
 
-// Fungsi buka-tutup menu burger
+// // Fungsi buka-tutup menu burger
 menuToggle.addEventListener("click", () => {
+  console.log("Tombol diklik!"); // Cek di F12 (Console)
   navList.classList.toggle("active");
-
-  // Opsional: Ubah ikon burger menjadi 'X' saat terbuka
-  const icon = menuToggle.querySelector("i");
-  if (navList.classList.contains("active")) {
-    icon.setAttribute("data-lucide", "x");
-  } else {
-    icon.setAttribute("data-lucide", "menu");
-  }
-  lucide.createIcons(); // Update ikon lucide
+  console.log("Class saat ini:", navList.className);
 });
 
 // Tutup menu otomatis saat salah satu link diklik
 document.querySelectorAll(".nav-links a").forEach((link) => {
   link.addEventListener("click", () => {
     navList.classList.remove("active");
-    menuToggle.querySelector("i").setAttribute("data-lucide", "menu");
-    lucide.createIcons();
   });
 });
